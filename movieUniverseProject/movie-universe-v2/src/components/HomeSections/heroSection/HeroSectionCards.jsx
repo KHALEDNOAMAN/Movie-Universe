@@ -94,7 +94,7 @@ export default function HeroSectionCards({ moviesList, genres }) {
       </div>
 
       <button
-        className="absolute top-[50%] left-0 z-20 bg-white/20 ml-2 p-1 rounded-full border border-white/20"
+        className="absolute top-[50%] left-0 z-20 bg-white/20 ml-2 p-1 rounded-full border border-white/20 cursor-pointer"
         onClick={() => {
           setincrement((prev) => {
             return increment > 1 ? prev - 1 : 0;
@@ -104,7 +104,7 @@ export default function HeroSectionCards({ moviesList, genres }) {
         <ChevronLeft size={30} strokeWidth={2.5} />
       </button>
       <button
-        className="absolute top-[50%] right-0 z-20 bg-black/30 mr-2 p-1 rounded-full border border-white/20"
+        className="absolute top-[50%] right-0 z-20 bg-black/30 mr-2 p-1 rounded-full border border-white/20 cursor-pointer"
         onClick={() => {
           setincrement((prev) => {
             return increment < trendingMoviesLength - 1
